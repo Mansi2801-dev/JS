@@ -13,3 +13,15 @@ console.log(myarr)
 console.log(typeof newarr)
 
 //in slice original array is not manipulated but in splice it is
+
+const book = ['powerless', 'sixofcrows', 'cruelprince']
+const char = ['cardan', 'kai', 'jude']
+// book.push(char)
+// console.log(book)
+// console.log(book[3][0])
+
+const everything = book.concat(char)//returns a new array
+console.log(everything)
+
+const ne = [...book, ...char]//spread operator
+console.log(ne)
