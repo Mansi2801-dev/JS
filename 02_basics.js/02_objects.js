@@ -14,3 +14,10 @@ console.log(jsuser['full name'])
 console.log(jsuser[mysym])
 console.log(typeof mysym)
 //object.freeze() does not allow any further changes
+
+//singleton
+const hogwarts = new Object()//singleton
+//const hogwarts = {}//non-singleton
+console.log(hogwarts)
+//objects can be nested
+//hasOwnProperty tells whether a given key exists or not
