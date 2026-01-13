@@ -17,3 +17,33 @@ function add1(number1, number2){//parameters
 }
 const result1 = add1(5,4)
 console.log("Result: ", result1)
+
+function noOfItems(...num1){//... is rest operator here where we can pass multiple arguments
+    return num1
+}
+console.log(noOfItems(1,2,3,4))
+
+function noOfItems1(val1, val2, ...num1){ 
+    return num1
+}
+console.log(noOfItems1(1,2,3,4))
+
+const user = {
+    username:"Rhys",
+    price:"1000"
+}
+function handleObjects(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+//handleObjects(user)
+handleObjects({
+    username:"Alex",
+    price:100
+})
+
+const myarray = [1,2,3,4,5]
+function returnvalue(getarray){
+    return getarray[1]
+}
+console.log(returnvalue(myarray))
+console.log(returnvalue([10,100,1000,10000]))
